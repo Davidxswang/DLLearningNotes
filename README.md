@@ -6,6 +6,6 @@ The version of TF here is 2.2.
 # Contents
 
 ## Note 1 TensorFlow Datasets
-This is not tf.data.Dataset APIs. This is the datasets that TF collected for researchers or practitioners to use conveniently. For more detail, check it out: https://www.tensorflow.org/datasets/overview
+This is not tf.data.Dataset APIs. This is the datasets that TF collected for researchers or practitioners to use conveniently. For more detail, [check it out](https://www.tensorflow.org/datasets/overview)
 
 Let dive into it!
