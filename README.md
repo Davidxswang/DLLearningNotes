@@ -8,4 +8,6 @@ I am a Machine Learning learner, a beginner. When I started learning this, I fee
 ## Note 1 TensorFlow Datasets
 This is not tf.data.Dataset APIs. This is the datasets that TF collected for researchers or practitioners to use conveniently. For more detail, [check it out](https://www.tensorflow.org/datasets/overview).
 
+The Google Colab notebook is [here](/Note_1_TensorFlow_Datasets.ipynb).
+
 Let dive into it!
