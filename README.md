@@ -1,19 +1,8 @@
-# What is this and why am I doing this?
-I am a Machine Learning learner, a beginner. When I started learning this, I feel overwhelmed by the tons of materials on the web, like the tutorials in TensorFlow homepage, Youtube videos, books, papers. So I decided to make this repository to mark down what I have learned and how I learned. Most of them are just some notes. I will try to make them concise, so no matter if it's you or me, can have some concise and less confusing start of Machine Learning and Tensorflow.
+# What is this repo?
+While there are tons of materials about all kinds of Deep Learning knowledge, frameworks and configurations, I feel overwhelmedby them when I am doing research. I started from TensorFlow, then switched to PyTorch. Now when I am doing anchor-free object detections and feature fusion experiments in object detections, I need to learn Detectron2, maybe mmDetection as well. Also, while I was preparing my own laptop to set up a mini hardware and software development environment for deep learning, I met a lot of problems of installing drivers and frameworks. I'd like to share some of my experience here and hopefully it can save some time and be helpful for those who want to enter this field.
 
-[The version of TF here is 2.2.](https://www.tensorflow.org/api_docs/python/tf)
+# Notes
 
-# Contents
-
-## Note 1 TensorFlow Datasets
-This is not tf.data.Dataset APIs. This is the datasets that TF collected for researchers or practitioners to use conveniently. For more detail, [check it out](https://www.tensorflow.org/datasets/overview).
-
-@misc{TFDS,
-  title = { {TensorFlow Datasets}, A collection of ready-to-use datasets},
-  howpublished = {\url{https://www.tensorflow.org/datasets} },
-}
+## Detectron2
 
 
-The Google Colab notebook is [here](/Note_1_TensorFlow_Datasets.ipynb).
-
-Let dive into it!
