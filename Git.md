@@ -19,19 +19,19 @@ This will show (by default):
 
 ## Branch
 
-### git checkout <the branch name to switch to>
+### git checkout \<branch name to switch to>
 Example: `git checkout feature1-dev` or `git checkout master`
 
 This will:
 - switch to another branch.
 
-### git branch -d <branch name to delete>
+### git branch -d \<branch name to delete>
 Example: `git branch -d fix-bug`
 
 This will:
-- delete the branch **locally**. *Make sure the branch has been merged to master before doing so.*
+- delete the branch **locally**. **Make sure the branch has been merged to master before doing so.**
 
-### git push <remote> :<branch name to delete>
+### git push \<remote> :\<branch name to delete>
 Example: `git push origin :fix-bug`
 
 This will:
@@ -47,13 +47,12 @@ This will:
 - update the local branch against the remote branch.
 
 ### git add <files/changes to stage>
-Example: `git add .` (This will stage all the changes.)
-         `git add fileabc` (This will stage the `fileabc` only)
+Example: `git add .` (This will stage all the changes.) or `git add fileabc` (This will stage the `fileabc` only)
 
 This will:
 - stage the specified changes.
 
-### git rm --cached <filename>
+### git rm --cached \<filename>
 Example: `git rm --cached fileabc`
 
 This will:
@@ -88,9 +87,10 @@ This will (corresponding to the example above):
 - ignore the file `file123`
 - **not** ignore the file `file345`
 - **not** ignore the files under directory `directoryfgh`
-The file you want to ignore should not be staged before you stage the `.gitignore` file. After you stage the `.gitignore` file, it will take effect.
 
-### git check-ignore [-v] <the ignored file>
+The file you want to ignore should not be staged before you stage the `.gitignore` file. After you stage the `.gitignore` file, the rules in `.gitignore` will take effect.
+
+### git check-ignore [-v] \<the ignored file>
 Example: `git check-ignore fileabc` or `git check-ignore -v fileabc` (to get verbose result)
 
 This will:
