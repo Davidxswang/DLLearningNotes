@@ -3,6 +3,17 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 
 # Notes
 
+## PyTorch
+
 ## Detectron2
 
 
+
+## Git
+- check status
+- branch
+- commit
+- git ignore
+
+# License
+This repository is licensed under the MIT license.
