@@ -8,7 +8,7 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 ## Detectron2
 
 ## Docker
-- install Docker Engine on Ubuntu 20.04 LTS x64 [docker install script](docker-ce-install.sh)
+- install Docker Engine on Ubuntu 20.04 LTS x64 [docker install script](docker-ce-install.sh). You may need to add your user to docker group to run docker without a root privilege.
 
 
 ## Git

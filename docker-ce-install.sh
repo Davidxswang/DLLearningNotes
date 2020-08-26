@@ -25,7 +25,21 @@ sudo add-apt-repository \
    	$(lsb_release -cs) \
    	stable"
 
+echo "Press 'y' to continue"
+while : ; do
+read -n 1 k <&1
+if [[ $k = y ]] ; then
+printf "\ncontinue....\n"
+break
+else
+printf "\nstopped\n"
+exit ;
+fi
+done
+
+echo -e "\e[91minstalling docker.....\e[0m"
 sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io
 
-echo "\e[91mAll Done.\e[0m"
+echo -e "\e[91mdocker installation finished.\e[0m"
+echo -e "\e[91myou may want to add your user to docker group by:\n\e[0m\e[93msudo usermod -aG docker \$USER\nnewgrp docker"
