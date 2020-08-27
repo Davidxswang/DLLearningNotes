@@ -6,6 +6,13 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 ## PyTorch
 
 ## Detectron2
+- datasets
+- build a model
+- checkpoints
+- train a model
+- evaluate a model
+- inference using a model
+- configs
 
 ## Docker
 - install Docker Engine on Ubuntu 20.04 LTS x64 [docker install script](docker-ce-install.sh). You may need to add your user to docker group to run docker without a root privilege.
