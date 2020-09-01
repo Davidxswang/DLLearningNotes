@@ -3,7 +3,14 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 
 # Notes
 
+## Slurm
+
+
 ## PyTorch
+
+
+## MMDetection
+
 
 ## Detectron2
 - datasets
