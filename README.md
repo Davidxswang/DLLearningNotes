@@ -3,18 +3,18 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 
 # Notes
 
-## Slurm
+## [Slurm](Slurm.md)
 - show information
 - create a job
 - cancel a job
 
-## PyTorch
+## [PyTorch](PyTorch.md)
 
 
-## MMDetection
+## [MMDetection](MMDetection.md)
 
 
-## Detectron2
+## [Detectron2](Detectron2.md)
 - datasets
 - build a model
 - checkpoints
@@ -23,11 +23,11 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 - inference using a model
 - configs
 
-## Docker
+## [Docker](Docker.md)
 - install Docker Engine on Ubuntu 20.04 LTS x64 [docker install script](docker-ce-install.sh). You may need to add your user to docker group to run docker without a root privilege.
 
 
-## Git
+## [Git](Git.md)
 - check status
 - branch
 - commit
