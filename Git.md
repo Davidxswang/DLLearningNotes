@@ -95,3 +95,13 @@ Example: `git check-ignore fileabc` or `git check-ignore -v fileabc` (to get ver
 
 This will:
 - show which gitignore file (the first example) or which rule in which gitignore file (the second example) ignored the file. 
+
+## SSH Config for Git
+In the /home/\<username>/.ssh/config, use this to allow github pull and push through ssh.
+```
+# github account username: abc123
+Host github.com-abc123
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa
+```

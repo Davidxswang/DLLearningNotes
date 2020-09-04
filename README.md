@@ -32,6 +32,7 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 - branch
 - commit
 - git ignore
+- ssh config for git
 
 # License
 This repository is licensed under the MIT license.
