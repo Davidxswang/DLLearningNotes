@@ -86,13 +86,44 @@ void add(int n, float *x, float *y)
 
 ### Memory Management
 
-- `cudaMallocManaged()`: **allocate** Unified Memory accessible from CPU or GPU
+#### Device Memory
+
+Device memory can be allocated as either linear memory or CUDA array.
+
+- CUDA arrays are opaque memory layouts optimized for texture fetching.
+- Linear memory exists on the device in a 40-bit address space, so separately allocated entities can reference one another via pointers, for example, in a binary tree.
+
+Linear memory operations:
+
+- `cudaMalloc()`: **allocate** the memory
 - `cudaFree()`: **free** the memory
+- `cudaMemcpy()`: **copy** data between host memory and device memory
+
+Unified Memory
+
+- `cudaMallocManaged()`: **allocate** Unified Memory accessible from CPU or GPU
 
 ### Synchronization
 
 - `__syncthreads`: all the threads in the block will wait before any is allowed to proceed. This is used for threads to synchronize on shared memory.
 - `cudaDeviceSynchronize()`: wait for GPU to finish executing a kernel
+
+## Compilation Workflow
+
+Using nvcc, we can compile the CUDA C code. The complete workflow is:
+
+1. Separate device code from host code
+2. Compile the device code into assembly form (PTX code) or binary form (cubin object)
+3. Modify the host code by replacing `<<<>>>` syntax with CUDA runtime function calls to PTX code or cubin object
+4. Modified host code can be left as C code waiting for further compilation or compiled into object code by letting nvcc invoke the host compiler.
+
+Applications can either link to the compiled host code or use the CUDA driver API to load and execute the PTX code or object code (as in Just-in-Time Compilation). Just-in-Time Compilation allows us to benefit any compiler improvement. JiT Compilation will cache the compiled object code but will clear the cache when upgrading the CUDA driver API.
+
+## CUDA C Runtime
+
+CUDA C runtime is implemented through cudart library, which links to the application either statically via cudart.lib or libcudart.a, or dynamically via cudart.dll or libcudart.so.
+
+When the first function calls to the device code happens, the CUDA C runtime will initiate. Using `cudaDeviceReset()` can reset the primary context and next call to the device code will initiate runtime again.
 
 ## Reference
 
