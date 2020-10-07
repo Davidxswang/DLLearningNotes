@@ -161,3 +161,7 @@ Example: `docker build -t ubuntu/apache-server:1.0 .`
 This will:
 
 - use the Dockerfile in the current directory to create an image, so the `.` at the end of the command is important
+
+## Reference
+
+Book: Mastering Ubuntu Server, 2nd Edition, by *Jay LaCroix*.
