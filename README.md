@@ -6,6 +6,15 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 
 ## Notes
 
+### Python 3
+
+- built-in data types
+- itertools
+- collections
+- heapq
+- bisect
+- functools
+
 ### [Slurm](Slurm.md)
 
 - show information
