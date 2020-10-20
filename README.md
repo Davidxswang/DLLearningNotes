@@ -8,6 +8,7 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 
 ### Python 3
 
+- uninstall Python3 from Mac
 - built-in data types
 - itertools
 - collections
