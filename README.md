@@ -43,6 +43,7 @@ While there are tons of materials about all kinds of Deep Learning knowledge, fr
 ### [Git](Git.md)
 
 - check status
+- remote
 - branch
 - commit
 - git ignore

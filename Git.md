@@ -20,6 +20,41 @@ This will show (by default):
 
 - the HEAD object, including hash of the commit, position of the branch, author, date and the content.
 
+## Remote
+
+### git remote
+
+Example: `git remote` or `git remote -v`
+
+This will show:
+
+- the name of the remote repository
+- the list of the remote repositories, include name, url and type
+
+### git remote add \<name> \<url>
+
+Example: `git remote add origin https:\\xxxxx`
+
+This will:
+
+- add a new remote repository
+
+### git remote remove \<name>
+
+Example: `git remote remove origin`
+
+This will:
+
+- remove the remote repository
+
+### git remote set-url \<name> \<url>
+
+Example: `git remote set-url origin https:\\xxxx`
+
+This will:
+
+- change the url of the remote repository specified
+
 ## Branch
 
 ### git checkout \<branch name to switch to>
