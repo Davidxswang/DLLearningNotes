@@ -20,6 +20,16 @@ This will show (by default):
 
 - the HEAD object, including hash of the commit, position of the branch, author, date and the content.
 
+## Config
+
+### git config \<options>
+
+Example: `git config user.email abc@abc.com`
+
+This will:
+
+- config the git repository or global git configurations
+
 ## Remote
 
 ### git remote
@@ -123,13 +133,22 @@ This will:
 
 - allow the use to amend the last commit message
 
-### git push
+### git push \<name> \<branch>
 
-Example: `git push`
+Example: `git push origin main` or `git push`
 
 This will:
 
-- update the remote branch according to the local branch.
+- update the remote branch according to the local branch
+- the name and branch can be left out, in which case, `origin` and `main` will be used implicitly
+
+### git clone
+
+Example: `git clone https://github.com/abcd/abc.git`
+
+This will:
+
+- clone the repository from github to the local host
 
 ## Git ignore
 
