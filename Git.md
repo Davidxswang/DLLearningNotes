@@ -73,7 +73,7 @@ Example: `git checkout feature1-dev` or `git checkout master`
 
 This will:
 
-- switch to another branch.
+- switch to another branch or a commit.
 
 ### git branch -d \<branch name to delete>
 
@@ -149,6 +149,14 @@ Example: `git clone https://github.com/abcd/abc.git`
 This will:
 
 - clone the repository from github to the local host
+
+### git revert \<commit hash>
+
+Example: `git revert --no-commit df26032`
+
+This will:
+
+- revert current directory to the commit specified but not commit
 
 ## Git ignore
 
