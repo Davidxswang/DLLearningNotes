@@ -12,6 +12,16 @@ This will show the current:
 - tracked & changed & unstaged files
 - tracked & changed & staged (ready to commit) files
 
+### git log
+
+Example: `git log`
+
+This will show:
+
+- commit info
+- branch info
+- HEAD info
+
 ### git show
 
 Example: `git show`
@@ -67,13 +77,30 @@ This will:
 
 ## Branch
 
+### git branch
+
+Example: `git branch`
+
+This will:
+
+- show branch info
+
+### git branch \<branch name>
+
+Example: `git branch feature-dev1`
+
+This will:
+
+- create a branch called `feature-dev1`
+
 ### git checkout \<branch name to switch to>
 
-Example: `git checkout feature1-dev` or `git checkout master`
+Example: `git checkout feature1-dev` or `git checkout main` or `git checkout -b feature1`
 
 This will:
 
 - switch to another branch or a commit.
+- `-b` will create a branch called `feature1` then switch to it.
 
 ### git branch -d \<branch name to delete>
 
@@ -81,7 +108,7 @@ Example: `git branch -d fix-bug`
 
 This will:
 
-- delete the branch **locally**. **Make sure the branch has been merged to master before doing so.**
+- delete the branch **locally**. **Make sure the branch has been merged to main before doing so.**
 
 ### git push \<remote> :\<branch name to delete>
 
@@ -142,7 +169,7 @@ This will:
 - update the remote branch according to the local branch
 - the name and branch can be left out, in which case, `origin` and `main` will be used implicitly
 
-### git clone
+### git clone \<repo address>
 
 Example: `git clone https://github.com/abcd/abc.git`
 
@@ -157,6 +184,14 @@ Example: `git revert --no-commit df26032`
 This will:
 
 - revert current directory to the commit specified but not commit
+
+### git merge \<branch name>
+
+Example: `git merge feature1-dev`
+
+This will:
+
+- merge the branch `feature1-dev` to the current branch, e.g., main
 
 ## Git ignore
 
