@@ -229,7 +229,7 @@ In the /home/\<username>/.ssh/config, use this to allow github pull and push thr
 
 ```config
 # github account username: abc123
-Host github.com-abc123
+Host github.com
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/id_rsa
